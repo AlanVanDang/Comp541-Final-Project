@@ -1,0 +1,619 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 82184
+WARNING: [Synth 8-2292] literal value truncated to fit in 32 bits [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/datapath.sv:25]
+WARNING: [Synth 8-2292] literal value truncated to fit in 32 bits [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/datapath.sv:60]
+WARNING: [Synth 8-6901] identifier 'newPC' is used before its declaration [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/datapath.sv:64]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module rom_module [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv:47]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 999.586 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/top.sv:15]
+	Parameter wordsize bound to: 32 - type: integer 
+	Parameter Nreg bound to: 32 - type: integer 
+	Parameter Nchars bound to: 64 - type: integer 
+	Parameter imem_size bound to: 1024 - type: integer 
+	Parameter imem_init bound to: imem.mem - type: string 
+	Parameter dmem_size bound to: 1024 - type: integer 
+	Parameter dmem_init bound to: dmem.mem - type: string 
+	Parameter smem_size bound to: 1200 - type: integer 
+	Parameter smem_init bound to: smem.mem - type: string 
+	Parameter bmem_init bound to: bmem.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'clockdivider_Nexys4' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/top.sv:121]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 80 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (1#1) [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'INV' [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36164]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (3#1) [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36164]
+INFO: [Synth 8-6157] synthesizing module 'BUFGMUX' [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1183]
+	Parameter CLK_SEL_TYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX' (4#1) [D:/Comp_451_2nd_try/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1183]
+INFO: [Synth 8-6155] done synthesizing module 'clockdivider_Nexys4' (5#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/top.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/keyboard.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (6#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/keyboard.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'accelerometer' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/accelerometer.sv:13]
+INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/AccelerometerCtl.vhd:69]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'ADXL362Ctrl' declared at 'D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/ADXL362Ctrl.vhd:89' bound to instance 'ADXL_Control' of component 'ADXL362Ctrl' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/AccelerometerCtl.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SPI_If' (7#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (8#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+INFO: [Synth 8-3491] module 'AccelArithmetics' declared at 'D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/AccelArithmetics.vhd:49' bound to instance 'Accel_Calculation' of component 'AccelArithmetics' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/AccelerometerCtl.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'AccelArithmetics' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/AccelArithmetics.vhd:73]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics' (9#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/AccelArithmetics.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (10#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/AccelerometerCtl.vhd:69]
+INFO: [Synth 8-6155] done synthesizing module 'accelerometer' (11#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources/accelerometer.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'mips' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab8/Lab8.srcs/sources_1/new/mips.sv:30]
+	Parameter wordsize bound to: 32 - type: integer 
+	Parameter Nreg bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/controller.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (12#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/controller.sv:65]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/datapath.sv:23]
+	Parameter Nloc bound to: 32 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nreg bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources_1/new/register_file.sv:47]
+	Parameter Nloc bound to: 32 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (13#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources_1/new/register_file.sv:47]
+WARNING: [Synth 8-689] width (32) of port connection 'WriteAddr' does not match port width (5) of module 'register_file' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/datapath.sv:95]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources_1/imports/new/ALU.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'addsub' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/addsub.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/adder.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/fulladder.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (14#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/fulladder.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (15#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'addsub' (16#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/addsub.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/shifter.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (17#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/shifter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'logical' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/logical.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'logical' (18#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/logical.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/comparator.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (19#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/comparator.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (20#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/sources_1/imports/new/ALU.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (21#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/datapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (22#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab8/Lab8.srcs/sources_1/new/mips.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'rom_module' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv:47]
+	Parameter Nloc bound to: 1024 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter initfile bound to: imem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'imem.mem' is read successfully [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'rom_module' (23#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv:47]
+WARNING: [Synth 8-689] width (30) of port connection 'addr' does not match port width (10) of module 'rom_module' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/top.sv:92]
+INFO: [Synth 8-6157] synthesizing module 'memIO' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/memIO.sv:23]
+	Parameter w bound to: 32 - type: integer 
+	Parameter dmem_size bound to: 1024 - type: integer 
+	Parameter dmem_init bound to: dmem.mem - type: string 
+	Parameter Nchars bound to: 64 - type: integer 
+	Parameter smem_size bound to: 1200 - type: integer 
+	Parameter smem_init bound to: smem.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'memory_mapper' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/memory_mapper.sv:23]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'memory_mapper' (24#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/memory_mapper.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram2port_module' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/ram2port_module.sv:47]
+	Parameter Nloc bound to: 1200 - type: integer 
+	Parameter Dbits bound to: 6 - type: integer 
+	Parameter initfile bound to: smem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'smem.mem' is read successfully [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/ram2port_module.sv:61]
+INFO: [Synth 8-6155] done synthesizing module 'ram2port_module' (25#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/ram2port_module.sv:47]
+WARNING: [Synth 8-689] width (30) of port connection 'addr1' does not match port width (11) of module 'ram2port_module' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/memIO.sv:80]
+WARNING: [Synth 8-689] width (32) of port connection 'din' does not match port width (6) of module 'ram2port_module' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/memIO.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'ram_module' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/ram_module.sv:47]
+	Parameter Nloc bound to: 1024 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter initfile bound to: dmem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'dmem.mem' is read successfully [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/ram_module.sv:61]
+INFO: [Synth 8-6155] done synthesizing module 'ram_module' (26#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/ram_module.sv:47]
+WARNING: [Synth 8-689] width (30) of port connection 'addr' does not match port width (10) of module 'ram_module' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/memIO.sv:85]
+INFO: [Synth 8-6155] done synthesizing module 'memIO' (27#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/memIO.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'vgadisplaydriver' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/vgadisplaydriver.sv:25]
+	Parameter Nchars bound to: 64 - type: integer 
+	Parameter smem_size bound to: 1200 - type: integer 
+	Parameter bmem_init bound to: bmem.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'vgatimer' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab4/Lab4.srcs/sources_1/new/vgatimer.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'xycounter' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/xycounter.sv:25]
+	Parameter width bound to: 800 - type: integer 
+	Parameter height bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xycounter' (28#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/xycounter.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'vgatimer' (29#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab4/Lab4.srcs/sources_1/new/vgatimer.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'rom_module__parameterized0' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv:47]
+	Parameter Nloc bound to: 16384 - type: integer 
+	Parameter Dbits bound to: 12 - type: integer 
+	Parameter initfile bound to: bmem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'bmem.mem' is read successfully [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'rom_module__parameterized0' (29#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'vgadisplaydriver' (30#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/vgadisplaydriver.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'montek_sound_Nexys4' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/sources_1/new/montek_sound_Nexys4.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'montek_sound_Nexys4' (31#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/sources_1/new/montek_sound_Nexys4.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'display8digit' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/display8digit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'hexto7seg' [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/hexto7seg.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hexto7seg' (32#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/hexto7seg.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'display8digit' (33#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/imports/new/display8digit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (34#1) [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/sources_1/new/top.sv:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 999.586 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 999.586 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 999.586 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 999.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/new/clock.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/new/clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/new/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/new/reset_DDR.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/new/reset_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/new/reset_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab4/Lab4.srcs/constrs_1/new/vga.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab4/Lab4.srcs/constrs_1/new/vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab4/Lab4.srcs/constrs_1/new/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/accel_DDR.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/accel_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/accel_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/keyboard_DDR.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/keyboard_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/keyboard_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/led_DDR.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/led_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/led_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/segdisplay_DDR.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/segdisplay_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/segdisplay_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/sound.xdc]
+Finished Parsing XDC File [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/sound.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Comp_451_2nd_try/FinalProject/FinalProject.srcs/constrs_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/constrs_1/new/sound.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1007.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  INV => LUT1: 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1007.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1007.812 ; gain = 8.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1007.812 ; gain = 8.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1007.812 ; gain = 8.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_SendRec_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_Trans_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Adxl_Ctrl_reg' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                               00 |                         10100000
+               stprepare |                               01 |                         00001001
+                 stshift |                               10 |                         01011011
+                  stdone |                               11 |                         00001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_reg' using encoding 'sequential' in module 'SPI_If'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        stspisendrecidle |                              000 |                          0000000
+         stspipreparecmd |                              001 |                          1000001
+         stspisendstartw |                              010 |                          0001011
+        stspiwaitondonew |                              011 |                          0000111
+         stspisendstartr |                              100 |                          0001110
+        stspiwaitondoner |                              101 |                          0100100
+        stspisendrecdone |                              110 |                          0010101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_SendRec_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stspitransidle |                              000 |                       0000000000
+     stspiprepandsendcmd |                              001 |                       1111100001
+       stspiwaitondonesr |                              010 |                       0000110011
+     stspiwaitforssinact |                              011 |                       0000000010
+          stspitransdone |                              100 |                       0000001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_Trans_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stadxlctrlidle |                             0000 |                     100100000000
+      stadxlsendresetcmd |                             0001 |                     011001000001
+     stadxlwaitresetdone |                             0010 |                     010000000011
+    stadxlconf_remaining |                             0011 |                     011001000010
+stadxlwaitsampleratetick |                             0100 |                     000100000110
+       stadxlread_status |                             0101 |                     011001000111
+         stadxlread_data |                             0110 |                     011000000101
+      stadxlformatandsum |                             0111 |                     000010101101
+         stadxlread_done |                             1000 |                     000001011111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 1007.812 ; gain = 8.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 4     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 65    
++---Registers : 
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 15    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 15    
+	   5 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
+	 957 Input   32 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	   9 Input   12 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 2     
+	  18 Input   10 Bit        Muxes := 1     
+	  16 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   5 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	  18 Input    5 Bit        Muxes := 1     
+	  16 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 8     
+	   7 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 27    
+	   4 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:24 ; elapsed = 00:05:16 . Memory (MB): peak = 1040.051 ; gain = 40.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|rom_module       | p_0_out    | 4096x12       | LUT            | 
+|vgadisplaydriver | p_0_out    | 4096x12       | LUT            | 
++-----------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------------+-----------+----------------------+-------------------------------------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives                                | 
++------------+-------------------------+-----------+----------------------+-------------------------------------------+
+|top         | mips/dp/rf/rf_reg       | Implied   | 32 x 32              | RAM32M x 12	                              | 
+|top         | memIO/screenmem/mem_reg | Implied   | 2 K x 6              | RAM16X1D x 6	RAM32X1D x 6	RAM128X1D x 54	 | 
+|top         | memIO/datamem/mem_reg   | Implied   | 1 K x 32             | RAM256X1S x 128	                          | 
++------------+-------------------------+-----------+----------------------+-------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:38 ; elapsed = 00:05:34 . Memory (MB): peak = 1040.051 ; gain = 40.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:58 ; elapsed = 00:05:58 . Memory (MB): peak = 1185.871 ; gain = 186.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------------+-----------+----------------------+-------------------------------------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives                                | 
++------------+-------------------------+-----------+----------------------+-------------------------------------------+
+|top         | mips/dp/rf/rf_reg       | Implied   | 32 x 32              | RAM32M x 12	                              | 
+|top         | memIO/screenmem/mem_reg | Implied   | 2 K x 6              | RAM16X1D x 6	RAM32X1D x 6	RAM128X1D x 54	 | 
+|top         | memIO/datamem/mem_reg   | Implied   | 1 K x 32             | RAM256X1S x 128	                          | 
++------------+-------------------------+-----------+----------------------+-------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:03 ; elapsed = 00:06:03 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:11 ; elapsed = 00:06:14 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:11 ; elapsed = 00:06:14 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:11 ; elapsed = 00:06:15 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:11 ; elapsed = 00:06:15 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:12 ; elapsed = 00:06:15 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:12 ; elapsed = 00:06:15 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | accel/accel/ADXL_Control/Data_Reg_reg[4][7] | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|top         | accel/accel/ADXL_Control/Data_Reg_reg[4][6] | 5      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |BUFGMUX     |     2|
+|3     |CARRY4      |    78|
+|4     |INV         |     1|
+|5     |LUT1        |   116|
+|6     |LUT2        |   193|
+|7     |LUT3        |   174|
+|8     |LUT4        |   193|
+|9     |LUT5        |   289|
+|10    |LUT6        |  1148|
+|11    |MMCME2_BASE |     1|
+|12    |MUXF7       |   268|
+|13    |MUXF8       |   120|
+|14    |RAM128X1D   |    54|
+|15    |RAM16X1D    |     6|
+|16    |RAM256X1S   |   128|
+|17    |RAM32M      |    12|
+|18    |RAM32X1D    |     6|
+|19    |SRL16E      |     8|
+|20    |FDRE        |   502|
+|21    |FDSE        |     5|
+|22    |IBUF        |     5|
+|23    |OBUF        |    51|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:12 ; elapsed = 00:06:15 . Memory (MB): peak = 1195.938 ; gain = 196.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:55 ; elapsed = 00:06:08 . Memory (MB): peak = 1195.938 ; gain = 188.125
+Synthesis Optimization Complete : Time (s): cpu = 00:05:12 ; elapsed = 00:06:16 . Memory (MB): peak = 1195.938 ; gain = 196.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 1195.938 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 676 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1195.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 210 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 2 instances
+  INV => LUT1: 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 54 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+110 Infos, 8 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:28 ; elapsed = 00:06:57 . Memory (MB): peak = 1195.938 ; gain = 196.352
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/Comp_451_2nd_try/FinalProject/FinalProject.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 19:43:37 2023...
