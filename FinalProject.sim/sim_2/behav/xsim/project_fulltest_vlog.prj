@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../Lab4/Lab4.srcs/sources_1/new" --include "../../../../../Lab7/Lab7.srcs/sources_1/imports/new" \
+"../../../../FinalProject.srcs/sources_1/imports/sources_1/imports/new/ALU.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/sources/accelerometer.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/adder.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/addsub.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/comparator.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/controller.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/datapath.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/display8digit.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/fulladder.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/hexto7seg.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/keyboard.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/logical.sv" \
+"../../../../FinalProject.srcs/sources_1/new/memIO.sv" \
+"../../../../FinalProject.srcs/sources_1/new/memory_mapper.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab8/Lab8.srcs/sources_1/new/mips.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab5/Lab5.srcs/sources_1/new/montek_sound_Nexys4.sv" \
+"../../../../FinalProject.srcs/sources_1/new/ram2port_module.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/ram_module.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/sources_1/new/register_file.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/rom_module.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/shifter.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/vgadisplaydriver.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab4/Lab4.srcs/sources_1/new/vgatimer.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/new/xycounter.sv" \
+"../../../../FinalProject.srcs/sources_1/new/top.sv" \
+"../../../../FinalProject.srcs/sources_1/imports/Comp_451_2nd_try/Lab7/Lab7.srcs/sources_1/new/rom_module.sv" \
+"../../../../FinalProject.srcs/sources_1/new/memIO_test.sv" \
+"../../../../FinalProject.srcs/sim_2/imports/Comp421 Jupyter Notebook/tester_fulltest.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
